@@ -1,7 +1,6 @@
 from flask import Flask
-
+import routes
 from routes import app
-from NewsClf import routes
 
 
 if __name__ == "__main__":
