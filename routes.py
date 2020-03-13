@@ -2,7 +2,7 @@ from threading import Thread
 import numpy as np
 import pandas as pd
 from flask import Flask, jsonify, request
-from NewsClf.clf import run, load_model
+from clf import run, load_model
 from flask_swagger_ui import get_swaggerui_blueprint
 
 app = Flask(__name__)

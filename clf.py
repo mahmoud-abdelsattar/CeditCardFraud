@@ -16,7 +16,7 @@ from sklearn.metrics import f1_score, matthews_corrcoef
 from sklearn.metrics import precision_score, recall_score
 from sklearn.metrics import confusion_matrix
 
-from NewsClf.utils import load_data
+from utils import load_data
 
 PICKLE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pickles", "clf.pkl")
 
