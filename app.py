@@ -1,6 +1,6 @@
 from flask import Flask
 
-from NewsClf.routes import app
+from routes import app
 from NewsClf import routes
 
 
