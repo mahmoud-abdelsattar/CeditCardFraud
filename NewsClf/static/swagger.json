@@ -1,0 +1,208 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "description": "Credit Card Fraud Detection Using Machine Learning",
+    "version": "1.0.0",
+    "title": "Credit Card Fraud Detection ML",
+    "contact": {
+      "email": "santana11santana@gmail.com"
+    }
+  },
+
+
+
+  "servers": [
+    {
+      "url": "/"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Prediction Request",
+      "description": "Example API for requesting and return Predictions of Fraud"
+    }
+  ],
+  "paths": {
+    "/request": {
+      "get": {
+        "tags": [
+          "train Classifier"
+        ],
+        "summary": "Returns Model is Trained",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+
+       "post" : {
+        "tags" : [ "CLF Predictions" ],
+        "summary" : "Predict the fraud of transactions",
+        "operationId" : "clfPredict",
+        "consumes" : [ "application/json"],
+        "produces" : [ "application/json"],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Transactions to be predict",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/data"
+          }
+        } ],
+        "Not Valid response" : {
+          "405" : {
+            "description" : "Invalid input"
+          }
+        },
+        "Valid responses" : [ {
+  "Confidence": [
+    0.17,
+    0.83
+  ],
+  "transaction": "Fraud"
+}]
+      }
+    }
+  },
+
+
+ "definitions": {
+    "data": {
+      "type": "object",
+      "required": [ "observation" ],
+      "properties": {
+        "manufacturer": {
+          "$ref": "#/definitions/observation"
+        }
+      }
+    },
+    "observation": {
+      "required": [ "Time", "V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "V9", "V10", "V11", "V12", "V13", "V14", "V15", "V16", "V17", "V18", "V19", "V20", "V21", "V22", "V23", "V24", "V25", "V26", "V27", "V28", "Amount" ],
+      "properties": {
+        "Time": {
+          "type": "number",
+          "example": "406.0"
+        },
+        "V1": {
+          "type": "number",
+          "example": "-2.3122265423"
+        },
+        "V2": {
+          "type": "number",
+          "example": "1.9519920106"
+        },
+        "V3": {
+          "type": "number",
+          "example": "-1.6098507323"
+        },
+        "V4": {
+          "type": "number",
+          "example": "3.9979055875"
+        },
+        "V5": {
+          "type": "number",
+          "example": "-0.5221878647"
+        },
+        "V6": {
+          "type": "number",
+          "example": "-1.4265453192"
+        },
+        "V7": {
+          "type": "number",
+          "example": "-2.5373873062"
+        },
+        "V8": {
+          "type": "number",
+          "example": "1.3916572483"
+        },
+        "V9": {
+          "type": "number",
+          "example": "-2.7700892772"
+        },
+        "V10": {
+          "type": "number",
+          "example": "-2.7722721447"
+        },
+        "V11": {
+          "type": "number",
+          "example": "3.2020332071"
+        },
+        "V12": {
+          "type": "number",
+          "example": "-2.8999073885"
+        },
+        "V13": {
+          "type": "number",
+          "example": "-0.5952218813"
+        },
+        "V14": {
+          "type": "number",
+          "example": "-4.2892537824"
+        },
+        "V15": {
+          "type": "number",
+          "example": "0.3897241203"
+        },
+        "V16": {
+          "type": "number",
+          "example": "-1.1407471798"
+        },
+        "V17": {
+          "type": "number",
+          "example": "-2.8300556745"
+        },
+        "V18": {
+          "type": "number",
+          "example": "-0.0168224682"
+        },
+        "V19": {
+          "type": "number",
+          "example": "0.416955705"
+        },
+        "V20": {
+          "type": "number",
+          "example": "0.1269105591"
+        },
+        "V21": {
+          "type": "number",
+          "example": "0.5172323709"
+        },
+        "V22": {
+          "type": "number",
+          "example": "-0.0350493686"
+        },
+        "V23": {
+          "type": "number",
+          "example": "-0.4652110762"
+        },
+        "V24": {
+          "type": "number",
+          "example": "0.3201981985"
+        },
+        "V25": {
+          "type": "number",
+          "example": "0.0445191675"
+        },
+        "V26": {
+          "type": "number",
+          "example": "0.1778397983"
+        },
+        "V27": {
+          "type": "number",
+          "example": "0.2611450026"
+        },
+        "V28": {
+          "type": "number",
+          "example": "-0.1432758747"
+        },
+        "Amount": {
+          "type": "number",
+          "example": "0.0"
+        }
+      }
+    }
+  }
+    
+}
