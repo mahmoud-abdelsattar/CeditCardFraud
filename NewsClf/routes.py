@@ -3,8 +3,22 @@ import numpy as np
 import pandas as pd
 from flask import Flask, jsonify, request
 from NewsClf.clf import run, load_model
+from flask_swagger_ui import get_swaggerui_blueprint
 
 app = Flask(__name__)
+
+### swagger specific ###
+SWAGGER_URL = '/swagger'
+API_URL = '/static/swagger.json'
+SWAGGERUI_BLUEPRINT = get_swaggerui_blueprint(
+    SWAGGER_URL,
+    API_URL,
+    config={
+        'app_name': "Credit-Card-Fraud-Detection-ML"
+    }
+)
+app.register_blueprint(SWAGGERUI_BLUEPRINT, url_prefix=SWAGGER_URL)
+### end swagger specific ###
 
 
 @app.route("/")
