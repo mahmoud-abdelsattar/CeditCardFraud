@@ -7,7 +7,7 @@ from NewsClf.clf import run, load_model
 app = Flask(__name__)
 
 
-@app.route("/",methods=['GET'])
+@app.route("/")
 def index():
     return "welcome to news clf"
 
@@ -19,7 +19,7 @@ def train_new_model():
     return "training started !!"
 
 
-@app.route("/load_model",methods=['GET'])
+@app.route("/load_model")
 def load_new_model():
     cur_model = load_model()
     return "model updated !"
