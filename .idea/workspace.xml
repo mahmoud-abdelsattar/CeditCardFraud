@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6940e01a-eff0-4f50-929e-00c10a692809" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsClf/pickles/clf.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/pickles/clf.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsClf/static/swagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/swagger.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clf.py" beforeDir="false" afterPath="$PROJECT_DIR$/clf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,8 +122,16 @@
       <workItem from="1584039077779" duration="7513000" />
       <workItem from="1584085957428" duration="1544000" />
       <workItem from="1584090169395" duration="993000" />
-      <workItem from="1584135721760" duration="256000" />
+      <workItem from="1584135721760" duration="754000" />
     </task>
+    <task id="LOCAL-00001" summary="commit from phcharm">
+      <created>1584136117756</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584136117756</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +148,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit from phcharm" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit from phcharm" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -158,6 +164,11 @@
           <url>file://$PROJECT_DIR$/NewsClf/routes.py</url>
           <line>30</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
