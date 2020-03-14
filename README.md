@@ -79,3 +79,8 @@ You can also test this api on heroku.
 Live : https://card-fraud.herokuapp.com/clf
 
 use the above curl commands replacing `http://127.0.0.1` with `https://card-fraud.herokuapp.com/`
+
+
+
+## Jupyter Notebook'Trianed Model with Logistic Regression'
+![Credit Card Fraud Detection.ipynb](Jnotebook.png)
