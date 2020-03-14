@@ -76,20 +76,25 @@ curl -X POST http://127.0.0.1:5000/clf -H 'Content-Type: application/json' -d '{
 ## Swagger UI
 ![swag1.png](swag1.png)
 
-## Hosted Locally
+## Swagger UI Hosted Locally
 http://127.0.0.1:5000/swagger/
 
-###
+
 ## Hosted via Heroku
+https://card-fraud.herokuapp.com/
+
+## Swagger UI Live on Heroku
 https://card-fraud.herokuapp.com/swagger/
- 
-You can also test this api on heroku.
 
-Live : https://card-fraud.herokuapp.com/clf
+### Live Prediction on Heroku using Our Traind Model
+```bash
+curl -X POST https://card-fraud.herokuapp.com/clf -H 'Content-Type: application/json' -d '{	
+	"data":{"Time":406.0,"V1":-2.3122265423,"V2":1.9519920106,"V3":-1.6098507323,"V4":3.9979055875,"V5":-0.5221878647,"V6":-1.4265453192,"V7":-2.5373873062,"V8":1.3916572483,"V9":-2.7700892772,"V10":-2.7722721447,"V11":3.2020332071,"V12":-2.8999073885,"V13":-0.5952218813,"V14":-4.2892537824,"V15":0.3897241203,"V16":-1.1407471798,"V17":-2.8300556745,"V18":-0.0168224682,"V19":0.416955705,"V20":0.1269105591,"V21":0.5172323709,"V22":-0.0350493686,"V23":-0.4652110762,"V24":0.3201981985,"V25":0.0445191675,"V26":0.1778397983,"V27":0.2611450026,"V28":-0.1432758747,"Amount":0.0}
+	
+}'
+```
 
-use the above curl commands replacing `http://127.0.0.1` with `https://card-fraud.herokuapp.com/`
-
-
+## Use the above curl commands replacing `http://127.0.0.1` with `https://card-fraud.herokuapp.com/`
 
 ## Jupyter Notebook'Trianed Model with Logistic Regression'
 ### Credit Card Fraud Detection.ipynb
