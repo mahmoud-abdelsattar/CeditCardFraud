@@ -73,7 +73,7 @@
       "type": "object",
       "required": [ "observation" ],
       "properties": {
-        "manufacturer": {
+        "data": {
           "$ref": "#/definitions/observation"
         }
       }
