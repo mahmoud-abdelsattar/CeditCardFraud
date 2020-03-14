@@ -93,3 +93,5 @@ use the above curl commands replacing `http://127.0.0.1` with `https://card-frau
 
 ## Jupyter Notebook'Trianed Model with Logistic Regression'
 ### Credit Card Fraud Detection.ipynb
+
+### Meduim Blog: https://medium.com/@santana11santana/credit-card-fraud-detection-using-random-forest-eb689237ec2c
