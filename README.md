@@ -9,7 +9,7 @@ Your contributions will be visible since this project is public.
 
 ### To Setup and Start
 
-## First go to this link https://www.kaggle.com/mlg-ulb/creditcardfraud and Download the dataset creditcard.csv and put it inside the data folder of the Finla_ml_api Folder
+## First go to this link https://www.kaggle.com/mlg-ulb/creditcardfraud and Download the dataset creditcard.csv and put it inside the data folder.
 
 ```bash
 pip install -r requirements.txt 
