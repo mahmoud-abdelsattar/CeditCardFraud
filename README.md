@@ -73,11 +73,11 @@ curl -X POST http://127.0.0.1:5000/clf -H 'Content-Type: application/json' -d '{
 ## Swagger UI
 ![swag1.png](swag1.png)
 
-Hosted Locally
+## Hosted Locally
 http://127.0.0.1:5000/swagger/
 
 ###
-Hosted via Heroku
+## Hosted via Heroku
 https://card-fraud.herokuapp.com/swagger/
  
 You can also test this api on heroku.
