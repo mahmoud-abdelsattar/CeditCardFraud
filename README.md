@@ -62,6 +62,9 @@ curl -X POST http://127.0.0.1:5000/clf -H 'Content-Type: application/json' -d '{
   "transaction": "Fraud"
 }
 ```
+### confidence have two value 
+### first one for valid tranasction propapilty / second for fraud tranasction propapilty
+
 ### You Can use these Requestes with Postman 
 ### Tutrial to lean how to use Postman https://www.youtube.com/watch?v=t5n07Ybz7yI
 ### Example of Bad Request
