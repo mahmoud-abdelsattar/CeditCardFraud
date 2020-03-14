@@ -94,7 +94,7 @@ curl -X POST https://card-fraud.herokuapp.com/clf -H 'Content-Type: application/
 }'
 ```
 
-## Use the above curl commands replacing `http://127.0.0.1` with `https://card-fraud.herokuapp.com/`
+### Use the above curl commands replacing `http://127.0.0.1:5000` with `https://card-fraud.herokuapp.com/`
 
 ## Jupyter Notebook'Trianed Model with Logistic Regression'
 ### Credit Card Fraud Detection.ipynb
