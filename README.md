@@ -64,7 +64,10 @@ curl -X POST http://127.0.0.1:5000/clf -H 'Content-Type: application/json' -d '{
 ```
 ### You Can use these Requestes with Postman 
 ### Tutrial to lean how to use Postman https://www.youtube.com/watch?v=t5n07Ybz7yI
-### Example:
+### Example of Bad Request
+![postRequest.png](postRequest.png)
+### Example of Working Request
+![postman.png](postman.png)
 
 
 ## Swagger UI
