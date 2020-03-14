@@ -83,4 +83,4 @@ use the above curl commands replacing `http://127.0.0.1` with `https://card-frau
 
 
 ## Jupyter Notebook'Trianed Model with Logistic Regression'
-![Credit Card Fraud Detection.ipynb](Credit Card Fraud Detection.ipynb)
+![Credit Card Fraud Detection.ipynb]
