@@ -102,6 +102,8 @@ curl -X POST https://card-fraud.herokuapp.com/clf -H 'Content-Type: application/
   ],
   "transaction": "Fraud"
 }
+```
+
 
 ### Use the above curl commands replacing `http://127.0.0.1:5000` with `https://card-fraud.herokuapp.com/`
 
