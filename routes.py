@@ -18,6 +18,8 @@ SWAGGERUI_BLUEPRINT = get_swaggerui_blueprint(
     }
 )
 app.register_blueprint(SWAGGERUI_BLUEPRINT, url_prefix=SWAGGER_URL)
+
+
 ### end swagger specific ###
 
 
@@ -42,13 +44,13 @@ def load_new_model():
 @app.route("/clf", methods=['POST'])  # for test use postman and in test tab put this [{"data":""}]
 def classify():
     # load doc
-    if  request.is_json:
+    if request.is_json:
         print("Valid Json")
     else:
         return jsonify({
             "Bad Request": "Not Valid Json Request , Please check the Keys and values numbers "
         })
-    
+
     data = request.json['data']
     print(data)
     print(type(data))
@@ -72,5 +74,5 @@ def classify():
     conf = conf.tolist()
     return jsonify({
         "transaction": pred[0],
-        "Confidence":  conf[0]
+        "Confidence": {"Valid": conf[0][0], "Fraud": conf[0][1]}
     })
