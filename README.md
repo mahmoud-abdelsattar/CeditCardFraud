@@ -56,8 +56,8 @@ curl -X POST http://127.0.0.1:5000/clf -H 'Content-Type: application/json' -d '{
 ```
 {
   "Confidence": [
-    0.17,
-    0.83
+    "Fraud": 0.83,
+    "Valid": 0.17
   ],
   "transaction": "Fraud"
 }
@@ -93,6 +93,15 @@ curl -X POST https://card-fraud.herokuapp.com/clf -H 'Content-Type: application/
 	
 }'
 ```
+### Output from heroku
+```
+{
+  "Confidence": [
+    "Fraud": 0.83,
+    "Valid": 0.17
+  ],
+  "transaction": "Fraud"
+}
 
 ### Use the above curl commands replacing `http://127.0.0.1:5000` with `https://card-fraud.herokuapp.com/`
 
