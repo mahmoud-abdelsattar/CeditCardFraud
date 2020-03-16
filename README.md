@@ -96,7 +96,8 @@ curl -X POST https://card-fraud.herokuapp.com/clf -H 'Content-Type: application/
 
 ### Use the above curl commands replacing `http://127.0.0.1:5000` with `https://card-fraud.herokuapp.com/`
 
-## Jupyter Notebook'Trianed Model with Logistic Regression'
-### Credit Card Fraud Detection.ipynb
+# Jupyter Notebook'Trianed Model with Random Forset'
+# Credit Card Fraud Detection.ipynb
 
-### Meduim Blog: https://medium.com/@santana11santana/credit-card-fraud-detection-using-random-forest-eb689237ec2c
+
+# Meduim Blog: https://medium.com/@santana11santana/credit-card-fraud-detection-using-random-forest-eb689237ec2c
